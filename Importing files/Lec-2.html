@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"> <!-- Define the character encoding for the document -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Define the viewport settings for responsive design -->
+    <title>Lec2</title> <!-- Set the title of the webpage -->
+</head>
+<body>
+    <p>
+        <h2>
+            <a href="http://google.com" target="_blank">Google</a> <!-- Create a link to Google that opens in a new tab -->
+        </h2>
+    </p>
+    <hr> <!-- Horizontal line -->
+    
+    <!-- Video elements -->
+    <video src="whitebeard.mp4" width="400px" autoplay muted controls loop poster="wp2609248-doflamingo-wallpapers.jpg"></video>
+    <!-- Video element with various attributes: 
+         - src: Video file source
+         - width: Video width
+         - autoplay: Automatically start playing the video
+         - muted: Mute the video
+         - controls: Show video player controls (play, pause, volume, etc.)
+         - loop: Loop the video
+         - poster: Display an image as a poster before the video starts -->
+    
+    <video src="whitebeard.mp4" width="400px" controls loop poster="wp2609248-doflamingo-wallpapers.jpg"></video>
+    <!-- Video element similar to the above one, without autoplay and mute -->
+    
+    <!-- Embedded YouTube videos -->
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/GQ_0yC4pu30?si=LTwFbsI5eIJUHkSr" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    <!-- YouTube embedded video with various attributes:
+         - src: YouTube video URL
+         - title: Title of the video player
+         - frameborder: Frame border settings
+         - allow: Permissions for the embedded player -->
+    
+    <br>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/2QR11oDukn4?si=8s2bFVqU2hjX3jEM&amp;start=1412" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    <!-- Another YouTube embedded video with similar attributes -->
+    
+    <hr> <!-- Horizontal line -->
+    
+    <!-- Iframe to embed an external website -->
+    <iframe src="https://moewalls.com/" frameborder="0"></iframe>
+    
+    <!-- Tables -->
+    <table border="1"  > <!-- Create an HTML table with a border -->
+        <!-- Table Heading -->
+        <thead>
+            <tr>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+                <td>4</td>
+            </tr>
+        </thead>
+        
+        <!-- Table Body -->
+        <tbody>
+            <tr>
+                <td rowspan="4">A</td> <!-- Merge cells vertically to occupy the space of four rows -->
+                <td rowspan="3">B</td> <!-- Merge cells vertically to occupy the space of three rows -->
+                <td rowspan="2">C</td> <!-- Merge cells vertically to occupy the space of two rows -->
+                <td>d</td>
+            </tr>
+            <tr>
+                <td colspan="3">D</td> <!-- Merge cells horizontally to occupy the space of three columns -->
+            </tr>
+            <tr>
+                <td colspan="3">E</td> <!-- Merge cells horizontally to occupy the space of three columns -->
+            </tr>
+            <tr>
+                <td colspan="4">f</td> <!-- Merge cells horizontally to occupy the space of four columns -->
+            </tr>
+        </tbody>
+        
+        <!-- Table Footer -->
+        <tfoot>
+            <tr>
+                <td colspan="2">total</td>
+                <td>=</td>
+                <td>@</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>
