@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Edu+TAS+Beginner:wght@500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="specificity.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inheritance</title>
+    <style>
+        body {
+            color: blue;
+        }
+
+        .box{
+            border: 2px solid black;
+            height: 100px;
+            width: 100px;
+        }
+        img{height: 100%;
+        width: 100%;}
+        div {
+            font-family: Edu TAS Beginner;
+            text-align: center;
+            font-size: xx-large;
+            color: inherit;
+        }
+        p.class{
+            color: red !important;
+        }
+        .class{
+            color: inherit;
+        }
+    </style>
+</head>
+<body>
+    <div>The height: 100%;
+        width: 100%; are used to give the image the size of their respective paRENT BOXES</div>
+    <section class="box" align="center"> <img src="Webpage/Media/9223943 (1).jpg" alt=""></section>
+   
+    <div><p >The div has the attribute applied, but the p tag inherits the property <br>
+    of the div, cause it's inside it</p></div>
+    <p class="class">To tackle the importance factor(specificity), we use !important in the css<br>
+        we use it to overcome the specificity
+         </p>
+</body>
+</html>

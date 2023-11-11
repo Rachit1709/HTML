@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lec 10 </title>
+    <link rel="stylesheet" href="lec10 stylesheet.css">
+<style>
+    
+</style>
+</head>
+
+<body> <main class="body">
+    <form action="#"> <!-- Form element with an empty action attribute -->
+        <h1 align="center" class="heading">Payment Form</h1> <!-- Heading with alignment and class attributes -->
+        <hr>
+        <h2>
+            <div id="div2">Contact Info</div> <!-- Heading with an ID attribute -->
+        </h2>
+        <div class="div1">Name <span class="star">*</span>: <input type="text" name="name" required> </div> <!-- Input field with a name attribute -->
+    </form> <!-- End of the form -->
+
+    <p>
+        <br>
+        <fieldset style="width: 25%;"> <!-- Fieldset element with a width attribute  -->
+            <legend class="div1">Gender</legend> <!-- Legend for the fieldset with a class attribute -->
+            Male  <input type="radio" name="Sex" value="Male"> <!-- Radio button for gender selection -->
+            Female<input type="radio" name="Sex" value="Female">
+            <!-- Comment about radio button behavior -->
+        </p>
+    </fieldset> <!-- End of the fieldset -->
+
+    <div>
+        <span > Address: </span><br> <!-- Text with inline CSS style for color -->
+        <textarea name="Address " id="Address" cols="50 " rows="8"></textarea> <!-- Textarea for address -->
+    </div>
+
+    <div>
+        <span >Email <span class="star">*</span>:</span> <input type="email" id="email"required> <!-- Input field for email -->
+    </div>
+
+    <div>
+        <span >Pin Code <span class="star">*</span> </span> <input type="number" required> <!-- Input field for pin code -->
+    </div>
+<hr >
+    <h2 id="div2">Payment Info</h2> <!-- Heading with ID attribute -->
+    <p>
+        <span >Card Type:</span>
+    </p>
+    <select name="Card_type" id="Card_type"> <!-- Dropdown select for card type -->
+        <option value="">--Select Card Type--</option>
+        <option value="Visa">Visa Card</option>
+        <option value="Master">Master Card</option>
+    </select>
+
+    <p>
+        <span >Card Number <span class="star">*</span>:</span> 
+        <input type="number" name="Card_Number" id=">Card_Number"> <!-- Input field for card number (ID attribute error) -->
+    </p>
+
+    <p>
+        <span >Expiration Date:</span>
+        <input type="date" name="exp_Date" id="exp_Date " class="exp_Date" value="">
+    </p> <!-- Input field for expiration date with class attribute -->
+
+    <p>
+        <span >CVV <span class="star">*</span>:</span>
+        <input type="password" name="CVV" id="CVV" class="CVV"> <!-- Input field for CVV with class attribute -->
+    </p>
+
+    <input type="submit" value="Pay now" required> </input > <!-- Submit button for payment --></main>
+</body> <!-- End of the HTML body -->
+</html>

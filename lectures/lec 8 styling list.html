@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dancing+Script:
+        wght@600&family=Edu+TAS+Beginner:wght@500&display=swap"
+        rel="stylesheet">
+    <style>
+        div { 
+            font-family: Edu TAS Beginner;
+         
+            font-size: xx-large;
+        }
+        ul{text-align: left;
+            list-style-type:georgian;
+        }
+        ul:nth-child(even){
+            background-color: rgb(127, 127, 127);
+        }
+        ol:nth-child(even){
+            background-color: rgb(127, 127, 127);
+        }
+        ul.disc{list-style-type: disc;}
+
+        ol{list-style-type: upper-alpha;}
+ol.lower{
+    list-style-type: lower-roman;
+}
+        </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Styling list</title>
+</head>
+<body>
+    <div><p style="text-align: center;">
+ Unordered List</p>
+        <ul>
+            <li>we set the default to</li>
+            <li>georgian</li>
+        </ul>
+        <ul class="disc">
+            <li>we choose disc</li>
+            <li>only for this class ul</li>
+        </ul>
+        <hr>
+        <p style="text-align: center;"> Ordered list </p>
+        <ol>
+            <li>we set the default to</li>
+            <li>upper alpha</li>
+        </ol>
+        <ol class="lower">
+            <li>we choose lower roman</li>
+            <li>for this class ol</li>
+        </ol>
+    </div>
+    <hr>
+    <div style="text-align: center;">To decide weather to include the 
+        list markers in the background , we use list-style-position</div>
+    <div>
+        <ul >
+            <li>inside</li>
+            <li>the box</li>
+        </ul>
+        <ul style="list-style-position: outside;">
+            <li>outside</li>
+            <li>the box</li>
+        </ul>
+    </div><hr>
+    <div style="text-align: center;">
+        To use images instaed of tradintional like disc, numbers , etc we use list-style-image
+    </div>
+    <div>
+        <ul style="list-style-image: url(Webpage/Screenshot\ 2023-11-01\ 122719.png); list-style-position: inside;">
+            <li>
+                Image as bullet point
+            </li>
+            <li>
+               with list-style-position as inside
+            </li>
+            <li style="list-style-position: outside;">
+                with list-style-position as outside
+            </li>
+        </ul>
+        </div>
+        </body>
+        </html>

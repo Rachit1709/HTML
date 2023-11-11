@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Edu+TAS+Beginner:wght@500&display=swap"
+        rel="stylesheet">
+    <style>
+        html {
+            font-size: 16px;
+            /* Set the root font size to 16 pixels , rem depends on it */
+        }
+
+        body {
+            font-size: 32px;
+        }
+
+        div {
+            font-family: Edu TAS Beginner;
+            text-align: center;
+            font-size: xx-large;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lec 8</title>
+</head>
+
+<body>
+    <div>Relative Units</div>
+    <div>The root was set to 16px <br> (16 Is by default in most of the devices ) <br> Body was set to 32px</div>
+    <ul>
+        <li>
+            <p style="font-size: 1rem;">This is a paragraph with relative units of 1rem. It depends of font size of html
+                <br>If the root element has a font size of 16 pixels, 1rem would equal 16 pixels</p>
+        </li>
+        <li>
+            <p style="font-size: 1vw;">This is another paragraph with relative units of 1vw.(Browser Width) <br> vw is a
+                unit of
+                measurement in CSS that represents 1% of the viewport width. If the viewport is 1200 pixels wide, 100vw
+                would
+                equal 1200 pixels.</p>
+        </li>
+        <li>
+            <p style="font-size: 1vh;">This is yet another paragraph with relative units of 1vh.(Browser height) <br> vh
+                is a unit of
+                measurement in CSS that represents 1% of the viewport height. If the viewport is 800 pixels tall, 100vh
+                would
+                equal 800 pixels.</p>
+        </li>
+        <li>
+            <p style="font-size: 100%;">This is yet another paragraph with relative units of 100%. <br></p>
+        </li>
+        <li>
+            <p style="font-size: 1em;">This is the last paragraph with relative units of 1em. it depends on the font
+                size of
+
+                <body>
+
+                </body><br>If an element has a font size of 16 pixels, 1em would equal 16 pixels. If the font size of
+                the element
+                is changed, the size of 1em will change proportionally.</p>
+        </li>
+    </ul>
+<div>
+    Absolute units <br>
+</div>
+<br><p>1 cm =96px</p>
+<br><p>1 inch = 96px</p>
+<br><p>1 mm = 3.75px</p>
+<br><p>1 pt = 4px</p>
+<br><p>1 pc = 16px</p>
+
+</body>
+
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Edu+TAS+Beginner:wght@500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="specificity.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lec 9 Specifity</title>
+    <style>
+         div { 
+            font-family: Edu TAS Beginner;
+         
+            font-size: xx-large;}
+            .Favourite{
+            color: rgb(0, 0, 0);
+            font-size:medium;
+        }
+        .Favourite{
+            color: red;
+            font-size: xx-large;
+        }
+
+        ul#drinks li{
+            font-weight: 900;
+            color: black;
+            font-size:medium;
+        }
+        .Favourite1{
+    color: rgb(8, 0, 255);
+    font-size: xx-large;
+}
+    </style>
+</head>
+<body>
+    <ul id="drinks">
+        <li >CocaCola</li>
+        <li >Pepsi</li>
+        <li class="Favourite">thumbsUp</li>
+    </ul>
+
+    <p>The specificity of  'ul#drinks li' is higher than of .Favourite , so properties from 'ul#drinks li' are applied</p>
+    <div>Priority=Style attribute>ID> Class, Pseudoclass attributes>Elements</div>
+    <p class="Favourite">
+        hello
+    </p>
+    <div>
+        the properties of the attribute which has same name but is lower in postion is applied to the selection
+    </div>
+    <p class="Favourite1">Stylesheet</p>
+    <div>The colour is the one selected in to higher priority attribute</div>
+</body>
+</html>
